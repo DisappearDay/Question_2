@@ -32,3 +32,25 @@ void main()
 #undef PI 3.14
 	//printf("%d\n", PI);
 }
+struct Student222
+{
+	int no;
+	char name[20];
+	int age;
+};
+// 使用指针变量传递改变实参的值
+void inputStruct(struct Student222* p)
+{
+	printf("请输入学号、姓名、年龄：\n");
+	scanf("%d%s%d", &(p->no), p->name, &(p->age));
+}
+void outputStruct(struct Student222* p)
+{
+	printf("%d\t%s\t%d\n", p->no, p->name, p->age);
+}
+void main()
+{
+	struct Student222 stu;
+	inputStruct(&stu);
+	outputStruct(&stu);
+}
