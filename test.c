@@ -1,6 +1,5 @@
 //int main()
 //{
-
 //	/*char* p;
 //	p = "qsiahsnk";
 //	char s[] = { "0,1,2,3,4,5" };
