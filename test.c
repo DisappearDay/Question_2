@@ -16,8 +16,6 @@
 //	return 0;
 //}
 
-
-
 #define PI 3.14
 void main()
 {
