@@ -51,3 +51,62 @@ void main()
 	inputStruct(&stu);
 	outputStruct(&stu);
 }
+//int is_max(int* p, int len)
+//{
+//	int i,max=0;
+//	for (i = 0; i < len; i++)
+//	{
+//		if (max < *(p+i))
+//		{
+//			max = *(p+i);
+//		}
+//	}
+//	return max;
+//}
+//
+//
+//int main()
+//{
+//
+//	int arr[20] = { 1,4,67,89,21,43,21,60,85,35,23,0,54,75,24,54,12,35,37,86 };
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	printf("最大值是%d",is_max(arr, sz));
+//	return 0;
+//}
+
+
+//具体转换规则如下：90~100为A; 80~89为B; 70~79为C; 60~69为D; ? 0~59为E; 
+char grade(int n)
+{
+	switch (n)
+	{
+		case 10:
+		case 9:
+			return 'A';
+			break;
+		case 8:
+			return 'B';
+			break;
+		case 7:
+			return 'C';
+			break;
+		case 6:
+			return 'D';
+			break;
+		default:
+			return 'E';
+			break;
+
+	}
+}
+
+int main()
+{
+	int n, score=0;
+	printf("请输入你的成绩：");
+	scanf("%d", &n);
+	score = n / 10;
+	printf("你的等级为%c\n",grade(score));
+	
+	return 0;
+}
