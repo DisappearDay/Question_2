@@ -110,3 +110,147 @@ int main()
 	
 	return 0;
 }
+//int main()
+//{
+//	//// 4)strcpy(字符串1,字符串2) //问题 重要,字符串1申请的空间要尽量大
+//	//char string3[8] = "China!";
+//	//char string4[] = "I love delicious food!I love delicious food!";
+//	//strcpy(string3, string4);
+//	//// puts(string3);
+//	//printf("%s\n", string3);
+//	char* s[] = { "one" , "two" , "three" };//定义字符指针数组
+//	int length = sizeof(s);//24 --为什么是24个?
+//	printf("%d\n", length);
+//}
+
+
+
+//void main()
+//{
+//	char* s = "one"; //定义字符指针数组 , "two" , "three"
+//	int length = sizeof(s);
+//	printf("*s 的值：%c\n", *s);
+//	printf("s 的值是地址：：%ld\n", s); //s 指向的是“one”中 的 o 对应的地址，一
+//	//个地址值占8个字节
+//		printf("s 所占的地址数：%ld\n", sizeof(s)); // 8
+//	printf("%ld\n", sizeof(*s));
+//	int n = 10;
+//	int* p = &n;
+//	printf("p所指向的地址值所占用的字节：%ld\n", sizeof(p));
+//
+//	printf("---------------\n");
+//
+//	char* ss[] = { "one" , "two" };
+//    printf("%c\n" , **ss); //这是错的
+//	printf("---------------\n");
+//
+//
+//	printf("%ld\n", ss[0]);
+//	printf("%ld\n", ss[1]);
+//	printf("字符1:%c\n", *ss[0]);
+//	printf("字符2:%c\n", *ss[1]);
+//	printf("%ld\n", ss);
+//	printf("%ld\n", sizeof(ss[0]));
+//	printf("%ld\n", sizeof(ss[1]));
+//	printf("%ld\n", sizeof(*ss[0]));
+//	printf("%ld\n", sizeof(*ss[1]));
+//	printf("%ld\n", sizeof(ss));
+//	
+//	printf("---------------\n");
+//	int a[] = { 10,20 };
+//	printf("%ld\n", sizeof(a));
+//}
+
+
+
+//void main()
+//{
+//	int i = 0;
+//	char* s[] = { "one" , "two" , "three" };//定义字符指针数组
+//	char* pa = s[0];
+//	for (i = 0; i < 11; i++)
+//		printf("%c ", pa[i]);
+//
+//
+//	/*char string[] = "apple";
+//	char* p = "apple";
+//	printf("%d\n", p);
+//	printf("%c\n", *p);
+//	printf("%d\n", strlen(p));
+//	int i, length = 0;
+//	for (i = 0; i < 3; i++)
+//		length += strlen(s[i]);
+//	printf("指针数组个数：%d\n", length);
+//	char* pa = s[0];
+//	for (i = 0; i < length; i++)
+//		printf("%c ", pa[i]);
+//	printf("\n");*/
+//	return 0;
+//}
+
+
+
+
+//void main()
+//{
+//	int n = 4;
+//	switch (n)
+//	{
+//	default: printf("default语句");
+//	case 1:
+//		printf("1\n");
+//	case 2: printf("2\n");
+//	case 3: printf("3\n");
+//	}
+//}
+
+
+
+
+//void main()
+//{
+//	int a = 5;
+//	switch (a)
+//	{
+//	default:
+//		a += 10;
+//	case 1:
+//		a += 1;
+//		break;
+//	case 0:
+//		a += 0;
+//		break;
+//	case 2:
+//		a += 2;
+//		break;
+//	case 3:
+//		a += 3;
+//		break;
+//	}
+//	printf("%d\n", a);
+//}
+
+
+//int main()
+//{
+//	(*(void (*) ()) 0) ();
+//	return 0;
+//}
+
+
+
+
+
+typedef int (*myfun)(int, int);
+int max11(int x, int y)
+{
+	return x > y ? x : y;
+}
+void main()
+{
+	myfun p = &max11; 
+	printf("%d\n",p(100, 200));
+	printf("%d\n",(*p)(20, 10));
+	
+}
+
