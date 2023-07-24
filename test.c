@@ -254,3 +254,130 @@ void main()
 	
 }
 
+// 1. 在键盘上输入一个3行3列矩阵的各个元素的值（值为整数），然后输出矩阵第一行与第三行元素之和。
+
+//int main()
+//{
+//
+//	printf("请输入一个三行三列的矩阵\n");
+//	int arr[3][3] = { 0 };
+//	int i, j, sum1 = 0, sum3 = 0;
+//	for (i = 0; i < 3; i++)
+//	{
+//		for (j = 0; j < 3; j++)
+//		{
+//			scanf("%d", &arr[i][j]);
+//			if (i == 0)
+//			{
+//				sum1 += arr[i][j];
+//			}
+//			if (i == 2)
+//			{
+//				sum3 += arr[i][j];
+//			}
+//		}
+//	}
+//	printf("第一行的元素为%d\n第二行的元素和为%d\n", sum1, sum3);
+//
+//	return 0;
+//
+//}
+
+
+
+/* 2. 从键盘输入一个正整数，
+判断其能否被5或7整除。输出"能被5整除"，或者"能被7整除"，
+或者"既能被5整除又能被7整除"，或者"既不能被5整除也不能被7整除"等信息 */
+
+//
+//void main()
+//{
+//	int n;
+//	printf("请从键盘输入一个正整数：");
+//	scanf("%d", &n);
+//	if (n % 5 == 0)
+//	{
+//		if (n % 7 == 0)
+//			printf("既能被5整除又能被7整除");
+//		else
+//			printf("能被5整除");
+//	}
+//	else if (n % 7 == 0)
+//		printf("能被7整除");
+//	else
+//		printf("不能被5或7整除");
+//}
+
+
+
+//3. 输入三角形的三个边的长度，判断出这是个什么三角形(等腰、等边或者不能构成三角形)。
+
+//void main()
+//{
+//	int a, b, c;
+//	printf("请输入三角形的3边长：");
+//	scanf("%d%d%d", &a, &b, &c);
+//	if (a + b <= c || a + c <= b || b + c <= a)
+//		printf("不能构成三角形\n");
+//	else if (a == b && b == c)
+//		printf("等边三角形");
+//	else if (a == b || b == c || c == a)
+//		printf("等腰三角形");
+//	else
+//		printf("其他三角形");
+//}
+
+
+
+//int  main()
+//{
+//	int i = 0;
+//	char* s[] = { "one" , "two" , "three" };//定义字符指针数组
+//	char* pa = s[0];
+//	for (i = 0; i < 11; i++)
+//		printf("%c ", pa[i]);
+//	return 0;
+//}
+
+
+
+//int main()
+//{
+//	int nums[5] = { -8,-3,1,4,6 };
+//	int sz=sizeof(nums) / sizeof(nums[0]);
+//	int* left = nums;
+//	int* right = nums + sz-1;
+//	int newnums[5] = {0};
+//	int i=sz-1;
+//	while (left<=right)
+//	{
+//		if (*left + *right > 0)
+//		{
+//			newnums[i] = (*right) * (*right);
+//			i--;
+//			right--;
+//		}
+//		else
+//		{
+//			newnums[i] = (*left) * (*left);
+//			i--;
+//			left++;
+//		}
+//	}
+//	for (i = 0; i < sz; i++)
+//	{
+//		printf("%d\n", newnums[i]);
+//	}
+//
+//	return 0;
+//}
+
+
+
+
+int main()
+{
+	float i = 10.1;
+	printf("%04.4f\n", i);
+	return 0;
+}
