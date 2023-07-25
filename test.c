@@ -381,3 +381,96 @@ int main()
 	printf("%04.4f\n", i);
 	return 0;
 }
+
+#include<stdio.h>
+
+
+
+//void main() {
+//	float x = 1, y;
+//	y = (++x) * (x++) * (++x); 
+//	printf("%f\n", x); 
+//	printf("%f\n", y);
+//
+//
+//
+//
+//	x = 1;
+//	// 3 * 3 : ++x : 操作的是 x 的值，相当于 x 自增1； ++ 的运算符优先级 大于 * 的，所
+//	//以先算 ++x ，再算 * ；
+//		// 第一次 ++x ：2 * ++x ；
+//		// 第二次 ++x : 2 * 3
+//		// 第三次 ：因为 ++x 改变的是 x 的值，所以 此时 运算的时候， x 的值 为 3， 即：3
+//	//	* 3 = 9
+//		y = (x++) * (x++);
+//	//
+//	printf("%f\n", x); // 4
+//	printf("%f\n", y);
+//}
+
+//void main() {
+//	int a = 3, b = 3, c = 5;
+//	int sum = 1 + b + (++b / 4);
+//	printf("sum = %d\n", sum);
+//
+//
+//
+//	// 1. 3 + 然后算小括号的 ==> 3 + 1(b 的值自加1变为4) ==> 4 + 1 ==> 5
+//	a = 3, b = 3;
+//	int res = b + (++b / 4); // 4 + (4/4) = 5
+//	printf("res = %d\n", res);
+//}
+
+
+
+//辗转相除法
+int gcd(int a, int b) {
+
+if (a < b) {
+	int temp = 0;
+	temp = a;
+	a = b;
+	b = temp;
+}
+int m = 0;
+m = a % b;
+while (m != 0) {
+	a = b;
+	b = m;
+	m = a % b;
+}
+return b;
+}
+//void main() {
+//	// 1.a、b分别表示要求的2个数的最大公约数.
+//	int a, b;
+//	// 2.m 变量用来存放余数.
+//	int m = 0;
+//	printf("请输入2个数：\n");
+//	scanf("%d%d", &a, &b);
+//	if (a < b) {
+//		int temp = 0;
+//		temp = a;
+//		a = b;
+//		b = temp;
+//	}
+//	m = a % b;
+//	// 循环条件结束是 余数 m == 0 , 表示找到了最大公约数,最大公约数是循环结束时 b 的值.
+//	while (m != 0) {
+//		a = b; //b的值重新作为 被除数
+//		b = m; //余数m作为除数
+//		m = a % b;
+//	}
+//	printf("最大公约数是%d\n", b);
+//	int x = 18, y = 9;
+//	printf("%d和%d的最大公约数是 %d\n", x, y, gcd(x, y));
+//}
+
+
+int main()
+{
+	char arr[20] = "a0sfd\0saidjh";
+	printf("%d\n", strlen(arr));
+
+	return 0;
+}
