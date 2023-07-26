@@ -474,3 +474,21 @@ int main()
 
 	return 0;
 }
+//int main()
+//{
+//	//char* p;
+//	//scanf("%s", p);
+//	//printf("%s\n", p);
+//	return 0;
+//}
+
+int main()
+{
+	char str1[] = "Hello";
+	char str2[] = "Hello";
+	if (str1 == str2)
+		printf("Equal\n");
+	else
+		printf("Unequal\n");
+	return 0;
+}
