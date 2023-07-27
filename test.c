@@ -492,3 +492,31 @@ int main()
 		printf("Unequal\n");
 	return 0;
 }
+int main()
+{
+	int i=0, j=100, count = 0;
+	/*for (i = 0; i < 100; i++)
+	{
+		for (j = 100; j >= i; j -= 2)
+		{
+			count += j - i;
+		}
+	}*/
+
+	while (i < 100)
+	{
+		j = 100;
+		while (j >= i)
+		{
+			count += j - i;
+			j -= 2;
+		}
+		i++;
+	}
+
+
+
+
+	printf("%d\n", count);
+	return 0;
+}
