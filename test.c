@@ -520,3 +520,110 @@ int main()
 	printf("%d\n", count);
 	return 0;
 }
+
+//int main()
+//{
+//	int i, n = 20;
+//	double a = 2, b = 1, s = 0, t;
+//	for (i = 1;
+//		i<=n
+//		; i++)
+//	{
+//		s =
+//			s+a/b
+//			;
+//
+//		t=a
+//			;
+//		a = a + b;
+//
+//		b=t
+//			;
+//	}
+//	printf("sum=%16.10f\n",
+//		s
+//	);
+//	return 0;
+//}
+// 
+// 
+// 
+
+//有4个圆塔，圆心分别为（2，2）、（－2，2）、（－2，－2）、（2，－2），
+//圆半径为1，如图4 - 8所示。这4个塔的高度为10m，塔以外无建筑物。今输入任一点的坐标，
+//求该点的建筑高度（塔外的高度为零）。
+
+//#include<stdio.h>
+//int main()
+//{
+//	int h = 10;
+//	float x1 = 2, y1 = 2, x2 = -2, y2 = -2, x3 = -2, y3 = -2, x4 = 2, y4 = -2, x, y, d1, d2, d3, d4;
+//	printf("请输入一个点(x,y)：");
+//	scanf("%f,%f", &x, &y);
+//	d1 = (x - x4) * (x - x4) + (y - y4) * (y - y4);      //求该点到各中心点距离
+//	d2 = (x - x1) * (x - x1) + (y - y1) * (y - y1);
+//	d3 = (x - x2) * (x - x2) + (y - y2) * (y - y2);
+//	d4 = (x - x3) * (x - x3) + (y - y3) * (y - y3);
+//	if (d1 > 1 && d2 > 1 && d3 > 1 && d4 > 1)  h = 0;    //判断该点是否在塔外
+//	printf("该点高度为%d\n", h);
+//	return 0;
+//}
+
+
+
+
+//从键盘输入一个字符串，将其中的小写字母全部转换成大写字母，
+//然后输出到一个磁盘文件“test”中保存。输入的字符串以“!”结束
+//int main()
+//{
+//	printf("请输入一个字符串，以“！”为结尾：");
+//	char* arr[100] = { 0 };
+//	int n = 0;
+//	scanf("%s", arr);
+//	char* p = arr;
+//	while (*p != '!')
+//	{
+//		if ((*p <= 'a') && (*p <= 'z'))
+//		{
+//			*p -= 32;
+//		}
+//		n++;
+//	}
+//	FILE* pf = fopen("test7.txt", "w");
+//
+//	fprintf(pf, "%s", arr);
+//
+//
+//	fclose(pf);
+//	pf = NULL;
+//	printf("成功");
+//
+//	return 0;
+//}
+
+
+
+#include<stdio.h>
+#include<stdlib.h>
+void main()
+{
+	FILE* fp;
+	char ch;
+	fp = fopen("text.txt", "w+");
+	if (fp == NULL)
+	{
+		printf("Cannot open file strike any key exit!");
+		exit(1);
+	}
+	printf("input the string:");
+	while (1)
+	{
+		scanf("%c", &ch);
+		if (ch == '!') break;
+		if (ch >= 'a' && ch <= 'z')
+			ch -= 32;
+		fprintf(fp, "%c", ch);
+	}
+	fclose(fp);
+}
+
