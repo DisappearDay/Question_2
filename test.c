@@ -626,4 +626,57 @@ void main()
 	}
 	fclose(fp);
 }
+//int main()
+//{
+//
+//	int i, j=0;
+//	for (i = 1900; i <= 2000; i++)
+//	{
+//		if ((i % 4 == 0) && (i % 100 != 0))
+//		{
+//			printf("%d ", i);
+//			j++;
+//			if (j % 10 == 0)
+//			{
+//				printf("\n");
+//			}
+//		}
+//	}
+//
+//	return 0;
+//}
+
+
+
+
+int is_huiwen(char* ps, int n)
+{
+	char* left = ps;
+	char* right = ps + n - 1;
+	while (left < right)
+	{
+		if ((*left) != (*right))
+		{
+			return 0;
+		}
+		left++;
+		right--;
+	}
+	return 1;
+
+}
+
+
+int main()
+{
+	printf("请输入一行字符串：");
+	char str[20] = { 0 };
+	char* p = str;
+	scanf("%s", p);
+	int sz = strlen(p);
+	int res = is_huiwen(p, sz);
+	printf("%d\n", res);
+
+	return 0;
+}
 
