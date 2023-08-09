@@ -681,3 +681,137 @@ int main()
 	return 0;
 }
 
+
+#include <stdio.h>
+//int main()
+//{
+//	int i = 1;
+//	//dev编译器是6 因为dev和vs处理i++的方式不同
+//	int ret = (i++) + (i++) + (i++);
+//	printf("ret = %d\n", ret);
+//	return 0;
+//}
+
+//int i;
+//int main()
+//{
+//	i--;
+//	if (i > sizeof(i))
+//	{
+//		printf(">\n");
+//	}
+//	else
+//	{
+//		printf("<\n");
+//	}
+//	return 0;
+//}
+
+//获取一个整数二进制序列中所有的偶数位和奇数位，分别打印出二进制序列
+//int main()
+//{
+//	printf("请输入一个整数的二进制序列数:");
+//	int i = 0,n=0,k=0,x=0;
+//	char arr[32] = { 0 };
+//	char odd[16] = { 0 };
+//	char even[16] = { 0 };
+//    scanf("%s", &arr[i]);
+//	
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	for (i = 0; i < sz; i+=2)
+//	{
+//		even[k] = arr[i];
+//		k++;
+//	}
+//	for (i = 1; i < sz; i += 2)
+//	{
+//		odd[x] = arr[i];
+//		x++;
+//	}
+//	printf("%s\n", odd);
+//	printf("%s\n", even);
+//
+//	return 0;
+//}
+
+//
+//int diff_bit(int m, int n) {
+//	int tmp = m ^ n;
+//	int count = 0;
+//	while (tmp)
+//	{
+//		tmp = tmp & (tmp - 1);
+//		count++;
+//	}
+//	return count;
+//}
+//
+//int main()
+//{
+//	int m, n;
+//	printf("请输入两个数字： ");
+//
+//	scanf("%d %d", &m, &n);
+//
+//	int ret = diff_bit(m, n);
+//
+//	printf("ret=%d\n", ret);
+//
+//	
+//	return 0;
+//}
+
+
+
+//int main()
+//{
+//	char a=0;
+//	int b = 7;
+//	int c = 127;
+//	a = b + c;
+//	printf("%d\n", a);
+//
+//	return 0;
+//}
+
+char* is_fanzhuan(char* str,int len)
+{
+	int left = 0;
+	int right = len-1;  
+	while (left <= right)
+	{
+		char temp = str[left];
+		str[left] = str[right];
+		str[right] = temp;
+		left++;
+		right--;
+	}
+	return str;
+}
+
+
+//int main()
+//{
+//	char arr[20] = "abcdefg";
+//	int len=strlen(arr);
+//	printf("%s\n",is_fanzhuan(arr, len));
+//	
+//
+//	return 0;
+//}
+
+
+int main()
+{
+	int a = 27;
+	int i,count=0;
+	for (i = 0; i < 8; i++)
+	{
+		if ((a >> i) & 1 == 1)
+		{
+			count++;
+		}
+	}
+	printf("%d\n", count);
+	return 0;
+}
