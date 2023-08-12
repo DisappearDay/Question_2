@@ -47,8 +47,6 @@ void outputStruct(struct Student222* p)
 	printf("%d\t%s\t%d\n", p->no, p->name, p->age);
 }
 void main()
-
-
 {
 	struct Student222 stu;
 	inputStruct(&stu);
