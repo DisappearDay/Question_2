@@ -815,3 +815,167 @@ int main()
 	printf("%d\n", count);
 	return 0;
 }
+
+
+//int main()
+//{
+//	int i ;
+//	for (i = 1; i <= 100; i++)
+//	{
+//		if (0==i % 3)
+//		{
+//			printf("%d ", i);
+//		}
+//	}
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	int a =2,b=3,c=1,temp=0;
+//	if (a < b)
+//	{
+//		temp = a;
+//		a = b;
+//		b = temp;
+//		if (a < c)
+//		{
+//			temp = a;
+//			a = c;
+//			c = temp;
+//			if (b < c)
+//			{
+//				temp = b;
+//				b = c;
+//				c = temp;
+//			}
+//		}
+//	}
+//	printf("%d %d %d\n", a, b, c);
+//
+//
+//
+//	return 0;
+//
+//}
+
+
+//int main()
+//{
+//	int a = 0, b = 0, c = 0;
+//	printf("请输入三角形的三条边:>");
+//	scanf("%d %d %d", &a, &b, &c);
+//	if ((a + b > c) && (a + c > b) && (b + c > c))
+//	{
+//		
+//		if ((a == b) && (b == c))
+//		{
+//			printf("等边三角形！");
+//		}
+//		else if ((a == b) || (b == c) || (a == c))
+//		{
+//			printf("等腰三角形！");
+//		}
+//		else
+//		{
+//			printf("普通三角形！");
+//		}
+//	}
+//	else
+//	{
+//		printf("啥也不是!");
+//	}
+//
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	int i,j;
+//	for (i=1;i<=9;i++)
+//	{
+//		for (j=1;j<=i;j++)
+//		{
+//			printf("%3d*%d=%d ", i, j, i * j);
+//		}
+//		printf("\n");
+//	}
+//	return 0;
+//
+//}
+
+
+//int main()
+//{
+//
+//	int arr[10] = { 1,2,3,4,5,6,7,8,9,10 };
+//	int i,max=0;
+//	for (i = 0; i < 10; i++)
+//	{
+//		if (arr[i] > max)
+//		{
+//			max = arr[i];
+//		}
+//	}
+//	printf("%d\n", max);
+//	return 0;
+//}
+
+
+
+//int main()
+//{
+//	double n = 0,  count1 = 0, count2 = 0;
+//	int i = 0;
+//	
+//	for (i = 0; i < 100; i+=2)
+//	{
+//		count1 += 1 / (n + 1 + i);
+//		count2 += 1 / (n + 2 + i);
+//	}
+//	printf("%lf\n", count1 - count2);
+//
+//
+//	return 0;
+//
+//}
+
+
+//
+//int main()
+//{
+//	int i,count=0;
+//	for (i = 1; i <= 100; i++)
+//	{
+//		if ((9 == i % 10)||(9 == i / 10))
+//		{
+//			count++;
+//		}
+//	}
+//	printf("%d\n", count);
+//	return 0;
+//}
+
+
+int main()
+{
+	int i,j;
+	for (i = 100; i <= 200; i++)
+	{
+		for (j = 2; j < i; j++)
+		{
+			if (0 == i % j)
+			{
+				break;
+			}
+		}
+		if (j == i)
+		{
+			printf("%d  ", i);
+		}
+	}
+
+	return 0;
+}
