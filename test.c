@@ -979,3 +979,188 @@ int main()
 
 	return 0;
 }
+
+//int main()
+//{
+//
+//
+//	int n,i,j;
+//	printf("请输入您所需要的空心四边形的大小:> ");
+//	scanf("%d", &n);
+//	for (i = 0; i < n; i++)
+//	{
+//		for (j = 0; j < n; j++)
+//		{
+//			if ((0 == i) || (n - 1 == i) || (0 == j) || (n - 1 == j))
+//			{
+//				printf("*");
+//			}
+//			else
+//			{
+//				printf(" ");
+//			}
+//		}
+//		printf("\n");
+//
+//	}
+//
+//	return 0;
+//}
+
+
+//
+//int main()
+//{
+//	int i,arr[10],left,right;
+//	for (i = 0; i < 10; i++)
+//	{
+//		scanf("%d", &arr[i]);
+//	}
+//	left = 0; right = 9;
+//	while (left < right)
+//	{
+//		int temp = arr[left];
+//		arr[left] = arr[right];
+//		arr[right] = temp;
+//		left++;
+//		right--;
+//	}
+//	for (i = 0; i < 10; i++)
+//	{
+//		printf("%d ", arr[i]);
+//	}
+//
+//
+//
+//	return 0;
+//}
+
+//
+//int main()
+//{
+//	int arr1[100] = { 0 };
+//	int arr2[100] = { 0 };
+//	int arr3[200] = { 0 };
+//	int i = 0,n,m,k=0,l=0;
+//	printf("请输入所需要合并的两行元素的个数：");
+//	scanf("%d %d", &n, &m);
+//	for (i = 0; i < n; i++)
+//	{
+//		scanf("%d", &arr1[i]);
+//	}
+//
+//	for (i = 0; i < m; i++)
+//	{
+//		scanf("%d", &arr2[i]);
+//	}
+//
+//	i = 0;
+//	while (('\0' != arr1[k]) && ('\0' != arr2[l]))
+//	{
+//		if (arr1[k] < arr2[l])
+//		{
+//			arr3[i] = arr1[k];
+//			k++;
+//		    i++;
+//		}
+//		else
+//		{
+//			arr3[i] = arr2[l];
+//			l++;
+//			i++;
+//		}
+//	}
+//	if ('\0' == arr1[k])
+//	{
+//		arr3[i] = arr2[l];
+//		i++;
+//		l++;
+//	}
+//	else
+//	{
+//		arr3[i] = arr1[k];
+//		i++;
+//		k++;
+//	}
+//
+//
+//	for (i = 0; i < m+n; i++)
+//	{
+//		printf("%d ",arr3[i]);
+//	}
+//	return 0;
+//}
+
+//int is_years(int n)
+//{
+//	if ((0 == n % 4) && (0 != n % 100) || (0 == n % 400))
+//	{
+//		return 1;
+//	}
+//	return 0;
+//}
+//
+//
+//int main()
+//{
+//	int n;
+//	printf("请输入年份：");
+//	scanf("%d", &n);
+//	int res=is_years(n);
+//	if (1 == res)
+//	{
+//		printf("是闰年\n");
+//	}
+//	else
+//	{
+//		printf("不是闰年\n");
+//	}
+//
+//	return 0;
+//}
+
+
+//void init(int arr[10])
+//{
+//	int i;
+//	for (i = 0; i < 10; i++)
+//	{
+//		arr[i] = 0;
+//	}
+//
+//}
+//void print3(int arr[10])
+//{
+//	int i = 0;
+//	for (i = 0; i < 10; i++)
+//	{
+//		printf("%d ", arr[i]);
+//	}
+//}
+//void reverse3(int arr[10])
+//{
+//	int left=0, right=9;
+//	while (left < right)
+//	{
+//		int temp = arr[left];
+//		arr[left] = arr[right];
+//		arr[right] = temp;
+//		left++;
+//		right--;
+//	}
+//}
+//
+//int main()
+//{
+//	int arr[10],i;
+//	init(arr);
+//	//print3(arr);
+//	printf("请输入十个数：");
+//	for (i = 0; i < 10; i++)
+//	{
+//		scanf("%d", &arr[i]);
+//	}
+//	reverse3(arr);
+//	print3(arr);
+//	return 0;
+//}
