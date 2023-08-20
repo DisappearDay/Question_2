@@ -1167,3 +1167,102 @@ int main()
 
 
 
+//写一个二分查找函数
+//
+//功能：在一个升序数组中查找指定的数值，找到了就返回下标，找不到就返回 - 1
+int bin_search(int arr[], int left, int right, int key)
+{
+	while (arr[(left+right)/2]!=key)
+	{
+		if (arr[(left + right) / 2] > key)
+		{
+			right = (left + right) / 2;
+		}
+		else
+		{
+			left = (left + right) / 2;
+		}
+		if ((left == right)||(left+1==right))
+		{
+			break;
+		}
+	}
+	if (arr[(left + right) / 2] == key)
+	{
+		return (left + right)/2;
+	}
+	else
+	{
+		return -1;
+	}
+
+}
+//int main()
+//{
+//	int arr[10] = { 1,3,5,7,9,11,13,15,17,19 };
+//	int res=bin_search(arr, 0, 9, 20);
+//	if (-1 != res)
+//	{
+//		printf("找到了,下标是%d\n",res);
+//	}
+//	else
+//	{
+//		printf("没找到");
+//	}
+//	return 0;
+//}
+//
+
+
+//int main()
+//{
+//	int i = 0;
+//	int arr[] = { 1,2,3,4,5,6,7,8,9,10 };
+//	for (i = 0; i <= 12; i++)
+//	{
+//		arr[i] = 0;
+//		printf("hello bit\n");
+//	}
+//	return 0;
+//}
+
+//
+//int main()
+//{
+//	int count = 20,botton=0,drink=0;
+//	while (count--)
+//	{
+//		drink++;
+//		botton += 1;
+//		if (2 == botton)
+//		{
+//			drink++;
+//			botton--;
+//		}
+//	}
+//	printf("能喝的饮料是%d瓶\n", drink);
+//	printf("还剩的空瓶子是%d个\n", botton);
+//	return 0;
+//}
+
+
+//void num(int x, int y)
+//{
+//
+//}
+//
+//int main()
+//{
+//	int i, j;
+//	//0～100000
+//	for (i = 1; i < 6; i++)
+//	{
+//		for (j = pow(10, i-1); j < pow(10, i); j++)
+//		{
+//			num(i, j);
+//		}
+//	}
+//
+//	return 0;
+//}
+
