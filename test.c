@@ -1266,3 +1266,59 @@ int bin_search(int arr[], int left, int right, int key)
 //	return 0;
 //}
 
+
+//斐波那契数列：1 1 2 3 5 
+
+int re_Fib(int x)
+{
+	int i, a = 1, b = 1,temp;
+
+	if (2 < x)
+	{
+		for (i = 2; i < x; i++)
+		{
+			temp = b;
+			b = a + b;
+			a = temp;
+		}
+		return b;
+	}
+	else
+	{
+		return 1;
+	}
+	
+}
+
+int Fib(int x)
+{
+	int count = 1;
+	if (x > 2)
+	{
+		return Fib(x-2) + Fib(x - 1);
+	}
+	return 1;
+}
+
+int main()
+{
+	int n,res;
+	printf("请输入:>");
+	scanf("%d", &n);
+	//res = re_Fib(n);
+	if (n > 1)
+	{
+		res = Fib(n);
+		printf("%d\n", res);
+
+	}
+	else
+	{
+		printf("%d\n", 1);
+
+	}
+	//printf("%d\n", res);
+
+
+	return 0;
+}
