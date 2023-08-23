@@ -1322,3 +1322,79 @@ int main()
 
 	return 0;
 }
+
+//
+//int my_pow(int x, int y)
+//{
+//	if (y != 0)
+//	{
+//		return x * my_pow(x, y - 1);
+//	}
+//	return 1;
+//}
+//
+//
+//int main()
+//{
+//	int n, k;
+//	printf("请输入k:");
+//	scanf("%d", &k);
+//	printf("请输入n:");
+//	scanf("%d", &n);
+//
+//	int res =my_pow(k, n);
+//	printf("k的n次方为:%d", res);
+//
+//	return 0;
+//}
+
+
+//例如，调用DigitSum(1729)，则应该返回1 + 7 + 2 + 9，它的和是19
+
+//输入：1729，输出：19
+
+//
+//int my_digit(int n)
+//{
+//	int count=0;
+//	if (n / 10 != 0)
+//	{
+//		count++;
+//		my_digit(n / 10);
+//	}
+//	return count;
+//}
+//
+//int my_sum(int n,int s)
+//{
+//	int sum = 0;
+//	if (n != 0)
+//	{
+//		sum += n % 10;
+//		my_sum(n / 10,s);
+//	}
+//}
+
+int my_digitSum(int n)
+{
+	//int s=my_digit(n);
+	//return my_sum(n,s);
+    int count = 0;
+	int m = 0;
+	if (n  != 0)
+	{
+		m = n % 10;
+		n = n / 10;
+	   	count=m+my_digitSum(n);
+	}
+	return count;
+}
+int main()
+{
+	int n;
+	printf("请输入");
+	scanf("%d", &n);
+	int res=my_digitSum(n);
+	printf("输出：%d\n", res);
+	return 0;
+}
