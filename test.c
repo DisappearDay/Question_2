@@ -1401,3 +1401,22 @@ int main()
 	return 0;
 }
 
+
+void my_print(int x)
+{
+	if (x > 9)
+	{
+		my_print(x/10);
+	}
+	printf("%d ", x % 10);
+}
+
+
+int main()
+{
+	int n;
+	scanf("%d", &n);
+	my_print(n);
+	
+	return 0;
+}
