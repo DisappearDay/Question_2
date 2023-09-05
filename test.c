@@ -1420,3 +1420,29 @@ int main()
 	
 	return 0;
 }
+
+
+#include <stdio.h>
+#include <stdlib.h>
+typedef int (*myfun)(int, int);
+int test1(int a, int b) {
+	return a + b;
+}
+int test2(int a, int b) {
+	return a - b;
+}
+int test3(int s1, int s2) {
+	return s1 + s2;
+}
+int main()
+{
+	myfun pf1 = test1;
+	printf("%d\n", (*pf1)(4, 36));
+	pf1 = test2;
+	printf("%d\n", (*pf1)(7, 21));
+	int (*pf2)(int, int) = test3;
+	printf("%d\n", (*pf2)(100, 1000));
+	return 0;
+}
+
+
