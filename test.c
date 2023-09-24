@@ -11,7 +11,6 @@
 //	// int *pa = a;
 
 //	// printf("%d\n", *(++pa));
-
 //	printf("%d\n", *(p[0] + 1));
 //	printf("%d\n", *p[2]);
 //
