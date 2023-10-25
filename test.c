@@ -1443,5 +1443,3 @@ int main()
 	printf("%d\n", (*pf2)(100, 1000));
 	return 0;
 }
-
-
