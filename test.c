@@ -1446,6 +1446,105 @@ int main()
 
 
 
+//
+//int main()
+//{
+//	/*printf("how is going???\n");
+//	int n = 1,m=1;
+//	int x = (n++, ++n);
+//	int y = (m++, m++);
+//	printf("%d %d %d\n", x, y,m);*/
+//
+//
+//	int i = 1;
+//	printf("%d %d\n", i++, i--); printf("%d\n", i);
+//	return 0;
+//}
+
+
+
+//int main()
+//{
+//	int arr[20] = { 1,2,3,4,5 };
+//	int* p;
+//	
+//	p = arr;
+//	printf("abch\befg");
+//	return 0;
+//}
+
+/*在一个整型数组中，只有一个数字出现一次，其他数组都是成对出现的，请找出那个只出现一次的数字。
+
+例如：
+
+数组中有：1 2 3 4 5 1 2 3 4，只有5出现一次，其他数字都出现2次，找出5*/
+
+
+//int main()
+//{
+//	int arr[9] = { 1,2,3,4,5,1,2,3,4 };
+//	int i, j,r=0;
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	for (i = 0; i < sz; i++)
+//	{
+//		for (j = 0; j < sz; j++)
+//		{
+//			if (i != j)
+//			{
+//				if (arr[i] == arr[j])
+//				{
+//					break;
+//				}
+//			}
+//		}
+//		if (arr[i] != arr[j])
+//		{
+//			r = arr[i];
+//		}
+//	}
+//
+//	printf("%d\n", r);
+//	return 0;
+//}
+
+/*
+写一个函数返回参数二进制中 1 的个数。
+
+比如： 15    0000 1111    4 个 1*/
+
+//int statistic_count(int n)
+//{
+//	int count = 0;
+//	while (n)
+//	{
+//		n = n & (n - 1);
+//		count++;
+//	}
+//	return count;
+//}
+//
+//int main()
+//{
+//	printf("请输入要统计的二进制个数：");
+//	int n = 0;
+//	scanf("%d", &n);
+//	int res = statistic_count(n);
+//	printf("%d\n", res);
+//	return 0;
+//}
+
+
+//不允许创建临时变量，交换两个整数的内容
+//int main()
+//{
+//
+//	int n = 4,m=5;
+//	n = m + n;
+//	m = n - m;
+//	n = n - m;
+//	printf("%d %d\n", n, m);
+//	return 0;
+//}
 
 
 
