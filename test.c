@@ -1545,3 +1545,127 @@ int main()
 //	return 0;
 //}
 
+
+//int main()
+//{
+//
+//	int arr[10] = { 0,1,2,3,4,5,6,7,8,9 };
+//	int* p = arr;
+//	int i;
+//	for (i=0;i<10;i++)
+//	{
+//		printf("%d ", *(p+i));
+//	}
+//	return 0;
+//}
+
+
+//实现一个对整形数组的冒泡排序
+//int main()
+//{
+//	int arr[10] = { 1,3,2,5,4,7,6,9,8,10 };
+//	int i, j;
+//	for (i=0;i<10;i++)
+//	{
+//		for (j=i+1;j<10;j++)
+//		{
+//			if (arr[i] > arr[j])
+//			{
+//				int temp = arr[i];
+//				arr[i] = arr[j];
+//				arr[j] = temp;
+//			}
+//		}
+//	}
+//	 int* p = arr;
+//		for (i=0;i<10;i++)
+//		{
+//			printf("%d ", *(p+i));
+//		}
+//
+//	return 0;
+//}
+
+
+//调整数组使奇数全部都位于偶数前面。
+//题目：
+//
+//输入一个整数数组，实现一个函数，
+//
+//来调整该数组中数字的顺序使得数组中所有的奇数位于数组的前半部分，
+//
+//所有偶数位于数组的后半部分。
+
+//
+//int main()
+//{
+//
+//	int arr[10] = { 1,2,3,4,5,6,7,8,9,10 };
+//	int left = 0, right = 9,i;
+//	while (left < right)
+//	{
+//		while ((left < right) && (arr[left] % 2 != 0))
+//		{
+//			left++;
+//		}
+//		while ((left < right) && (arr[right] % 2 == 0))
+//		{
+//			right--;
+//		}
+//		int temp = arr[left];
+//		arr[left] = arr[right];
+//		arr[right] = temp;
+//	}
+//	int* p = arr;
+//			for (i=0;i<10;i++)
+//			{
+//				printf("%d ", *(p+i));
+//			}
+//	return 0;
+//}
+
+//写一个函数，判断一个字符串是否为另外一个字符串旋转之后的字符串。
+//例如：给定s1 = AABCD和s2 = BCDAA，返回1
+//给定s1 = abcd和s2 = ACBD，返回0.
+//AABCD左旋一个字符得到ABCDA
+//AABCD左旋两个字符得到BCDAA
+//AABCD右旋一个字符得到DAABC
+//int main()
+//{
+//	char arr1[10] = { 0 };
+//	char arr2[10] = { 0 };
+//	
+//	printf("请输入两个相同长度的字符串：");
+//	printf("字符串1：");
+//	scanf("%s", arr1);
+//	printf("字符串2：");
+//	scanf("%s", arr2);
+//	int s=strlen(arr1);
+//	int i;
+//	char* p1 = arr1;
+//	char* p2 = arr1+s-1;
+//	while (s)
+//	{
+//		if (strcmp(arr1, arr2) == 0)
+//		{
+//			break;
+//		}
+//		char temp = *p1;
+//		
+//		for (i = 0; i < s-1; i++)
+//		{
+//			arr1[i] = arr1[i+1];
+//		}
+//		*p2 = temp;
+//	}
+//	if (strcmp(arr1, arr2) == 0)
+//	{
+//		printf("是");
+//	}
+//	else
+//	{
+//		printf("不是");
+//	}
+//
+//	return 0;
+//}
