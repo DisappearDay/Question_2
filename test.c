@@ -1740,3 +1740,95 @@ int main()
 //
 //	return 0;
 //}
+//
+//int main()
+//{
+//	char arr1[] = "welcome to bit...";
+//	char arr2[] = "#################";
+//	int left = 0;
+//	int right = strlen(arr1) - 1;
+//	printf("%s\n", arr2);
+//	while (left <= right)
+//	{
+//		Sleep(1000);
+//		arr2[left] = arr1[left];
+//		arr2[right] = arr1[right];
+//		left++;
+//		right--;
+//		printf("%s\n", arr2);
+//	}
+//	return 0;
+//}
+
+
+//
+//一个数组中只有两个数字是出现一次，其他所有数字都出现了两次
+//编写一个函数找出这两个只出现一次的数字。
+//例如：
+//有数组的元素是：1，2，3，4，5，1，2，3，4，6
+//只有5和6只出现1次，要找出5和6.
+//int main()
+//{
+//	int arr[10] = { 1,2,3,4,5,1,2,3,4,6 };
+//	int* p1 = arr, * p2 = arr, i, j, count = 0;
+//	for (i = 0; i < 10; i++)
+//	{
+//		for (j = 0; j < 10; j++)
+//		{
+//			if (i == j)
+//			{
+//				continue;
+//			}
+//			if (*(p1 + i) == *(p2 + j))
+//			{
+//				break;
+//			}
+//		}
+//		if (*(p1 + i) != *(p2 + j))
+//		{
+//			count++;
+//			printf("%d\n", *(p1 + i));
+//		}
+//		if (count == 2)
+//		{
+//			break;
+//		}
+//
+//	}
+//
+//	return 0;
+//}
+
+
+//KiKi想获得某年某月有多少天，请帮他编程实现。输入年份和月份，计算这一年这个月有多少天
+//
+//
+//int is_year(int y)
+//{
+//	if ((y % 4 == 0 && y % 100 != 0) || (y % 400 == 0))
+//	{
+//		return 1;
+//	}
+//	return 0;
+//}
+//
+//int main()
+//{
+//	int year, month;
+//	printf("请输入年份：");
+//	scanf_s("%d", &year);
+//	printf("请输入月份：");
+//	scanf_s("%d", &month);
+//	int res = is_year(year);
+//
+//
+//	int arr[12] = { 31,28,31,30,31,30,31,31,30,31,30,31 };
+//	if (res == 1)
+//	{
+//		arr[2] = 29;
+//	}
+//	int i;
+//	
+//	printf("%d\n", arr[month]);
+//	return 0;
+//}
