@@ -1843,3 +1843,25 @@ int main()
 //	printf("%d\n", c);
 //	return 0;
 //}
+#include <stdio.h>
+#include <assert.h>
+/*
+int my_strlen(const char* str)
+{
+	assert(str != NULL);
+	int count = 0;
+	while (*str)
+	{
+		str++;
+		count++;
+	}
+	return count;
+}
+
+int main()
+{
+	char* arr = "absiness";
+	int res = my_strlen(arr);
+	printf("%d\n", res);
+	return 0;
+}*/
