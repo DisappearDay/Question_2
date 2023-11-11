@@ -1845,6 +1845,9 @@ int main()
 //}
 #include <stdio.h>
 #include <assert.h>
+
+
+
 /*
 int my_strlen(const char* str)
 {
@@ -1865,3 +1868,4 @@ int main()
 	printf("%d\n", res);
 	return 0;
 }*/
+
