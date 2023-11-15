@@ -2059,3 +2059,46 @@ int main()
 //	return 0;
 //}
 
+
+//编程找出一个3行4列矩阵中的最大元素的值及其所在的行号列号。
+
+
+//int main()
+//{
+//	int arr[3][4] = { {1,2,32,55},{31,64,18,90},{102,42,96,3} };
+//	int i, j, count = arr[0][0],r=0,c=0;
+//	for (i = 0; i < 3; i++)
+//	{
+//		for(j=0;j<4;j++)
+//			if (count < arr[i][j])
+//			{
+//				count = arr[i][j];
+//				r = i;
+//				c = j;
+//			}
+//	}
+//	printf("最大值是%d 第%d行 第%d列", count, r+1, c+1);
+//
+//	return 0;
+//}
+
+//编写一个函数swap，实现两个整数交换，
+//在main函数中输入这两个数，调用swap函数，再在main函数中输出交换后的结果。
+
+
+void swap(int* x,int* y)
+{
+	int temp = *x;
+	*x = *y;
+	*y = temp;
+}
+//
+//int main()
+//{
+//	int a = 3, b = 5;
+//	printf("交换前%d,%d\n", a, b);
+//	swap(&a, &b);
+//	printf("交换后%d,%d", a,b);
+//
+//	return 0;
+//}
