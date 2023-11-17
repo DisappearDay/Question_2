@@ -2103,4 +2103,71 @@ void swap(int* x,int* y)
 //	return 0;
 //}
 
+//输入一个长度为5的整型数组，然后按降序将其排列并输出。
+
+//
+//int main()
+//{
+//	int i ,arr[5] = { 0 },j;
+//	printf("请输入5个数:");
+//	for (i = 0; i < 5; i++)
+//	{
+//		scanf("%d", &arr[i]);
+//	}
+//	for (i = 0; i < 5; i++)
+//	{
+//		for (j = i; j < 5; j++)
+//		{
+//			if (arr[i] < arr[j])
+//			{
+//				int temp = arr[i];
+//				arr[i] = arr[j];
+//				arr[j] = temp;
+//			}
+//			
+//		}
+//	}
+//	for (i = 0; i < 5; i++)
+//	{
+//		printf("%d ", arr[i]);
+//	}
+//	return 0;
+//}
+
+
+
+//编写一个判断素数的函数fun, 在主函数中输入一个整数，
+//调用fun函数判定是否素数，并在主函数中输出结果，是素数则输出1，否则输出0。
+//
+//int fun(int x)
+//{
+//	int i, j;
+//	for (i = 2; i < x; i++)
+//	{
+//		if (x % i == 0)
+//		{
+//			return 0;
+//		}
+//	}
+//	return 1;
+//}
+//int main()
+//{
+//	printf("请输入判定数:");
+//	int n;
+//	scanf("%d", &n);
+//	int res = fun(n);
+//	if (res == 1)
+//	{
+//		printf("1");
+//
+//	}
+//	else
+//	{
+//		printf("0");
+//	}
+//
+//	
+//	return 0;
+//}
 
