@@ -2171,3 +2171,108 @@ void swap(int* x,int* y)
 //	return 0;
 //}
 
+
+//
+//struct A
+//{
+//	int _a : 2;
+//	int _b : 5;
+//	int _c : 10;
+//	int _d : 30;
+//};
+//int main()
+//{
+//
+//	printf("%d\n", sizeof(struct A));
+//}
+
+
+//输入三个整数xyz，将这三个整数由小到大排序
+//int main()
+//{
+//	int x, y, z,temp;
+//	printf("请输入三个数：");
+//	scanf("%d%d%d", &x, &y, &z);
+//	if (x > y)
+//	{
+//		if (z > x)
+//		{
+//			temp = z;
+//			z = x;
+//			x = temp;
+//		}
+//		if (z > y)
+//		{
+//			temp = z;
+//			z = y;
+//			y = temp;
+//		}
+//	}
+//	else
+//	{
+//		temp = y;
+//		y = x;
+//		x = temp;
+//		if (z > x)
+//		{
+//			temp = z;
+//			z = x;
+//			x = temp;
+//		}
+//		if (z > y)
+//		{
+//			temp = z;
+//			z = y;
+//			y = temp;
+//		}
+//	}
+//	printf("%d %d %d ", x, y, z);
+//
+//	return 0;
+//}
+
+//int main() {
+//	int x, y, z, t;
+//	scanf("%d%d%d", &x, &y, &z);
+//	if (x > y) {
+//		t = x;
+//		x = y;
+//		y = t;
+//	}
+//	if (x > z) {
+//		t = x;
+//		x = z;
+//		z = t;
+//	}
+//	if (y > z) {
+//		t = y;
+//		y = z;
+//		z = t;
+//	}
+//	printf("small to big:%d %d %d\n", x, y, z);
+//}
+
+
+//输入一个正整数表示一个星期的某一天，用指针数组处理
+//
+//int main()
+//{
+//	int* arr[8] = { "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday","Illegal day"};
+//	int n,i;
+//	printf("请输入一个数：");
+//	scanf("%d", &n);
+//	for (i = 0; i < 7; i++)
+//	{
+//		if (i == n - 1)
+//		{
+//			printf("%s", arr[i]);
+//			break;
+//		}
+//	}
+//	if (i==7)
+//	{
+//		printf("%s", arr[i]);
+//	}
+//	return 0;
+//}
+
