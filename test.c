@@ -2276,3 +2276,40 @@ void swap(int* x,int* y)
 //	}
 //	return 0;
 //}
+
+//union Un1
+//{
+//	char c[5];
+//	int i;
+//};
+//union Un2
+//{
+//	short c[7];
+//	int i;
+//};
+//int main()
+//{
+//	//下⾯输出的结果是什么？
+//	printf("%d\n", sizeof(union Un1));
+//	printf("%d\n", sizeof(union Un2));
+//	return 0;
+//}
+
+
+
+//假设有n个学生，建立学生的学号，姓名，性别，年龄，三门课，计算总分和平均分，打印
+//
+//struct student
+//{
+//	int sno[10];
+//	char name[20];
+//	char sex[10];
+//	int score[3];
+//};
+//
+//int main()
+//{
+//	struct student s = { 20200401,"zhangsan","男",{50,29,43} };
+//
+//	return 0;
+//}
