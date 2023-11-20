@@ -2257,6 +2257,7 @@ void swap(int* x,int* y)
 //
 //int main()
 //{
+
 //	int* arr[8] = { "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday","Illegal day"};
 //	int n,i;
 //	printf("请输入一个数：");
