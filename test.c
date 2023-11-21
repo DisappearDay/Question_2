@@ -2312,3 +2312,74 @@ void swap(int* x,int* y)
 //
 //	return 0;
 //}
+
+//void test()
+//{
+//	int i = 0;
+//	int* p = (int*)malloc(10 * sizeof(int));
+//	if (NULL == p)
+//	{
+//		//exit(EXIT_FAILURE);
+//	}
+//	for (i = 0; i <= 10; i++)
+//	{
+//		*(p + i) = i;//当i是10的时候越界访问
+//	}
+//	free(p);
+//}
+
+
+//void GetMemory(char* p)
+//{
+//	p = (char*)malloc(100);
+//}
+//void Test(void)
+//{
+//	char* str = NULL;
+//	GetMemory(str);
+//	strcpy(str, "hello world");
+//	printf(str);
+//}
+
+//char* GetMemory(void)
+//{
+//	char p[] = "hello world";
+//	return p;
+//}
+//void Test(void)
+//{
+//	char* str = NULL;
+//	str = GetMemory();
+//	printf(str);
+//}
+//void GetMemory(char** p, int num)
+//{
+//	*p = (char*)malloc(num);
+//}
+//void Test(void)
+//{
+//	char* str = NULL;
+//	GetMemory(&str, 100);
+//	strcpy(str, "hello");
+//	printf(str);
+//	free(str);
+//	str = NULL;
+//}
+
+
+void Test(void)
+{
+	char* str = (char*)malloc(100);
+	strcpy(str, "hello");
+	free(str);
+	if (str != NULL)
+	{
+		strcpy(str, "world");
+		printf(str);
+	}
+}
+int main()
+{
+	Test();
+	return 0;
+}
