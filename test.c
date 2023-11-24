@@ -2366,7 +2366,7 @@ void swap(int* x,int* y)
 //	str = NULL;
 //}
 
-
+/*
 void Test(void)
 {
 	char* str = (char*)malloc(100);
@@ -2382,4 +2382,4 @@ int main()
 {
 	Test();
 	return 0;
-}
+}*/
