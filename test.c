@@ -2386,3 +2386,39 @@ int main()
 	Test();
 	return 0;
 }*/
+
+//int main()
+//{
+//	float rate = 0.0225, capital = 0, deposit = 0;
+//	int n=0;
+//	printf("请输入本金:");
+//	scanf("%f", &capital);
+//	printf("要存入多少年？\n");
+//	scanf("%d", &n);
+//	while (n--)
+//	{
+//		capital += capital * rate;
+//	}
+//	printf("%f\n", capital);
+//	return 0;
+//}
+
+
+////计算ax平方+bx+c；
+//int main()
+//{
+//	printf("请输入a，b，c的值\n");
+//	int a, b, c, r1, r2;
+//	double  dt;
+//	scanf("%d%d%d", &a, &b, &c);
+//	dt = pow(b * b - 4 * a * c,0.5);
+//
+//	r1 = (int)(-b + dt) / (2 * a);
+//	r2 = (int)(-b - dt) / (2 * a);
+//	printf("结果一：%d结果二：%d", r1, r2);
+//
+//
+//	return 0;
+//}
+
+#define Π 3.14
