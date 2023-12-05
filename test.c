@@ -2426,6 +2426,28 @@ int main()
 #define Π 3.14
 
 
+//int main()
+//
+//{
+//	char ch1;
+//	char ch2;
+//	printf("\n请输入ch1值(使用getche())：");
+//	ch1 = _getche();
+//	printf("\nch1=%c\n", ch1);
+//	printf("\n请输入ch2值(使用getchar())：");
+//	ch2 = getchar();
+//	putchar(ch2); // 输出字符
+//	return 0;
+//}
+
+
+int main(void)
+{
+    int a = 0, b = 2, c;
+    c = !a || ++b && a--;
+    printf("a=%d,b=%d,c=%d\n", a, b, c);
+    return 0;
+}
 
 
 
