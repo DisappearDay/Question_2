@@ -2451,4 +2451,115 @@ int main(void)
 }
 
 
-
+int main()
+//{
+//
+//	int arr[];
+//
+//	return 0;
+//}
+//
+//
+//折半查找
+// 
+//int main()
+//{
+//	int arr[10] = { 1,2,3,4,5,6,7,8,9,10 }, n;
+//	printf("请输入要查找的数字：");
+//	scanf("%d", &n);
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	int right = sz-1,left = 0;
+//	while (left <= right)
+//	{
+//		if (arr[(left + right) / 2] == n)
+//		{
+//			printf("找到啦！位置是%d", (left + right) / 2);
+//			break;
+//		}
+//		else if (arr[(left + right) / 2] > n)
+//		{
+//			right = ((left + right) / 2)-1;
+//		}
+//		else 
+//		{
+//			left = ((left + right) / 2)+1;
+//		}
+//	}
+//	return 0;
+//}
+//
+//
+//
+//
+//int BinSearch(int arr[], int len, int key)                          //折半查找法（二分法）
+//{
+//	int low = 0;                         //定义初始最小
+//	int high = len - 1;                 //定义初始最大
+//	int mid;                            //定义中间值
+//	while (low <= high)
+//	{
+//		mid = (low + high) / 2;              //找中间值
+//		if (key == arr[mid])               //判断min与key是否相等
+//			return mid;
+//		else if (key > arr[mid])             //如果key>mid  则新区间为[mid+1,high]
+//			low = mid + 1;
+//		else                                       //如果key<mid  则新区间为[low,mid-1]
+//			high = mid - 1;
+//	}
+//	return -1;                             //如果数组中无目标值key，则返回 -1 ；
+//}
+//int main()
+//{
+//	int arr[] = { 1,2,3,4,5,6,7,8,9,10,11 };                      //首先要对数组arr进行排序
+//	printf("%d \n", BinSearch(arr, (sizeof(arr) / sizeof(arr[0])), 11));
+//	return 0;
+//}
+//
+//
+//
+//
+//
+//选择排序  --- 由大到小
+//int main()
+//{
+//	int arr[10] = { 1,3,5,7,9,2,4,6,8,10 };
+//	int i, j;
+//	for (i = 0; i < 10; i++)
+//	{
+//		for (j = i+1; j < 10; j++)
+//		{
+//			if (arr[i] < arr[j])
+//			{
+//				int temp
+//			}
+//		}
+//	}
+//	
+//	return 0;
+//}
+//
+//
+//冒泡排序
+//
+//int main()
+//{
+//	int arr[10] = { 1,3,5,7,9,2,4,6,8,10 };
+//	int i,j;
+//	for (i = 1; i <= 9; i++)
+//	{
+//		for (j = 0; j < 10; j++)
+//		{
+//			if (arr[j] < arr[j + 1])
+//			{
+//				int temp = arr[j];
+//				arr[j] = arr[j + 1];
+//				arr[j + 1] = temp;
+//			}
+//		}
+//	}
+//	for (i = 0; i < 10; i++)
+//	{
+//		printf("%d ", arr[i]);
+//	}
+//	return 0;
+//}
