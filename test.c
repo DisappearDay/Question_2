@@ -2548,8 +2548,6 @@ int main()
 //	int i,j;
 //	for (i = 1; i <= 9; i++)
 //	{
-
-
 //		for (j = 0; j < 10; j++)
 //		{
 //			if (arr[j] < arr[j + 1])
@@ -2565,7 +2563,6 @@ int main()
 //		printf("%d ", arr[i]);
 //	}
 //	return 0;
-
 //}
 
 
